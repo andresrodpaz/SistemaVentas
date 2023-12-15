@@ -1,0 +1,35 @@
+﻿/* Estilos específicos para el modo oscuro */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode .sidebar {
+    background-color: #1a1a1a;
+}
+
+.dark-mode .navbar {
+    background-color: #1a1a1a;
+    color: #fff;
+}
+
+    .dark-mode .card-header .py-3 .bg-second-primary {
+        background-color: #1a1a1a;
+        color: #fff;
+    }
+/* Estilos específicos para el modo oscuro */
+/* Estilos específicos para el modo oscuro */
+body.dark-mode .card-header.bg-second-primary {
+    background-color: #2d2d2d; /* Fondo oscuro para el card-header */
+    color: #ffffff; /* Texto claro para una mejor legibilidad */
+}
+
+
+/* Cambia el ícono del interruptor según el modo */
+#darkModeToggleIcon {
+    transition: transform 0.3s ease-in-out;
+}
+
+.dark-mode #darkModeToggleIcon {
+    transform: rotate(180deg);
+}

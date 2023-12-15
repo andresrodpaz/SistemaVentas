@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Chat";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section Estilos{
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" crossorigin="anonymous" />
+    <link href="~/css/Style_Chat.css" rel="stylesheet" type="text/css">
+}
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3 bg-second-primary">
+        <h6 class="m-0 font-weight-bold text-white">Chat de Soporte</h6>
+    </div>
+    <div class="card-body chat-container">
+        <!-- Div con fondo diferente para los mensajes -->
+        <div class="chat-messages-container">
+            <div class="chat-messages" id="chatMessages">
+                <!-- Mensajes se agregarán dinámicamente aquí -->
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="messageInput" placeholder="Escribe un mensaje...">
+            <input type="file" id="fileInput" style="display: none;" accept="image/*, application/pdf, application/msword, application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+            <div class="attachment-btn" id="attachmentBtn">
+                <button id="attachmentButton" class="attachment-btn">
+                    <i class="fas fa-paperclip" id="attachmentIcon"></i> Adjuntar
+                </button>
+                <div class="attachment-menu" id="attachmentMenu">
+                    <div class="option" data-type="image"><i class="fas fa-image"></i> Adjuntar Imagen</div>
+                    <div class="option" data-type="document"><i class="fas fa-file"></i> Adjuntar Documento</div>
+                </div>
+            </div>
+            <button id="sendMessageButton" class="send-button"><i class="fas fa-paper-plane"></i> Enviar</button>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+
+@section Scripts{
+    <script src="~/js/vistas/Chat_Index.js"></script>
+}

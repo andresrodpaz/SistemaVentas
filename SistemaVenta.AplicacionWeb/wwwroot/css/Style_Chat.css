@@ -1,0 +1,136 @@
+﻿/* Estilos para el área de mensajes del chat */
+.chat-messages-container {
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.chat-messages {
+    max-width: 70%;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    word-wrap: break-word;
+}
+/* Estilos para el área de mensajes del chat */
+#chatContainer {
+    height: 400px;
+    overflow-y: auto;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.message {
+    max-width: 70%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    word-wrap: break-word;
+}
+
+/* Estilos para mensajes del usuario */
+.user-message {
+    background-color: #a8e6cf;
+    color: #333;
+}
+
+/* Estilos para mensajes automáticos */
+.system-message {
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+#sendMessageButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el área de entrada del chat */
+.chat-input {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para el campo de mensaje de texto */
+#messageInput {
+    flex: 1; /* Take remaining space in the flex container */
+    margin-right: 10px; /* Adjust as needed for separation with the button */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para el botón de adjuntar */
+#attachmentBtn {
+    margin-right: 10px; /* Adjust as needed for separation with the text input */
+}
+
+#attachmentButton {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#attachmentIcon {
+    margin-right: 8px;
+}
+
+/**Robot Bot*/
+
+/* Estilos CSS para el contenedor del mensaje */
+.message {
+    display: flex; /* Utiliza flexbox para alinear elementos en la misma línea */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+}
+
+/* Estilos CSS para la imagen del robot */
+.robot-image {
+    width: 30px; /* Ajusta el ancho según sea necesario */
+    height: 30px; /* Ajusta la altura según sea necesario */
+    border-radius: 50%; /* Esto hace que la imagen sea circular */
+    margin-right: 10px; /* Espacio a la derecha del mensaje para separar la imagen del texto */
+}
+
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    .robot-image {
+        width: 20px; /* Ajusta el tamaño de la imagen para pantallas más pequeñas */
+        height: 20px;
+        margin-right: 5px; /* Ajusta el espacio a la derecha para pantallas más pequeñas */
+    }
+
+    .attachment-btn  {
+        font-size: 0; /* Oculta el texto del botón de adjuntar */
+    }
+
+        .attachment-btn  i {
+            font-size: 18px; /* Ajusta el tamaño del ícono según sea necesario */
+        }
+    button{
+        font-size:0;
+    }
+    .send-button {
+        font-size: 0; /* Oculta el texto del botón de enviar */
+    }
+
+        .send-button i {
+            font-size: 18px; /* Ajusta el tamaño del ícono según sea necesario */
+        }
+}
+
+

@@ -1,0 +1,104 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a StockHub</title>
+    <style>
+        body {
+            background-color: #EDF6FF;
+        }
+
+        .container {
+            width: 400px;
+            border-radius: 5px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px #DEDEDE;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #004DAF;
+            text-align: center;
+        }
+
+        p {
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        h4 {
+            color: #004DAF;
+            margin: 2px;
+        }
+
+        .recommendation {
+            background-color: #FFE1CE;
+            padding: 15px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+
+            .recommendation p {
+                margin: 0;
+                color: #F45E00;
+            }
+
+        .login-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #004DAF;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 3px;
+            margin-top: 10px;
+        }
+
+            .login-link:hover {
+                background-color: #003366;
+            }
+    </style>
+</head>
+
+<body>
+    <br />
+    <br />
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td align="center" colspan="2">
+                    <h2>Bienvenido a StockHub</h2>
+                </td>
+            </tr>
+            <tr>
+                <td align="left" colspan="2">
+                    <p>Se creó exitosamente tu usuario. Los detalles de tu cuenta son:</p>
+                </td>
+            </tr>
+            <tr>
+                <td><h4>Correo:</h4></td>
+                <td>@ViewData["Correo"]</td>
+            </tr>
+            <tr>
+                <td><h4>Contraseña:</h4></td>
+                <td>@ViewData["Clave"]</td>
+            </tr>
+        </table>
+        <div class="recommendation">
+            <p>Le recomendamos cambiar la contraseña una vez inicie sesión.</p>
+        </div>
+        <p>Para iniciar sesión, haga clic en el siguiente enlace:</p>
+        <a href="@ViewData["Url"]" class="login-link">Iniciar Sesión</a>
+    </div>
+    <br />
+    <br />
+</body>
+
+</html>
